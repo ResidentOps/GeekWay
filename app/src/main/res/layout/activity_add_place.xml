@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        tools:context=".admin.AddPlaceActivity">
+
+        <FrameLayout
+            android:id="@+id/frameNameLogo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageWhiteScreen"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/geekway_whitescreen" />
+
+            <ImageView
+                android:id="@+id/imageNameLogo"
+                android:layout_width="65sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="image"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.555"
+                app:srcCompat="@drawable/geekway" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textAddPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/press_start_2p"
+            android:text="@string/text_add_place"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameNameLogo" />
+
+        <EditText
+            android:id="@+id/editPlaceName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_location_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAddPlace" />
+
+        <EditText
+            android:id="@+id/editPlaceAge"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_people_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_age"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryTv" />
+
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_category_icon"
+            android:drawableEnd="@drawable/ic_down"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/editText_place_category"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityTv" />
+
+        <TextView
+            android:id="@+id/cityTv"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_city_icon"
+            android:drawableEnd="@drawable/ic_down"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/editText_place_city"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceName" />
+
+        <EditText
+            android:id="@+id/editPlaceWeb"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_web_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_web"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceTelephone" />
+
+        <EditText
+            android:id="@+id/editPlaceAddress"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_new_location_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_address"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPlacePhoto" />
+
+        <EditText
+            android:id="@+id/editPlaceTime"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_time_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_time"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceAddress" />
+
+        <EditText
+            android:id="@+id/editPlaceTelephone"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="userName"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_phone_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/editText_place_telephone"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceTime" />
+
+        <EditText
+            android:id="@+id/editPlaceDescription"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/editText_place_description"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceAge" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceDescription"
+            app:srcCompat="@drawable/ic_image" />
+
+        <TextView
+            android:id="@+id/textPlacePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald"
+            android:text="@string/text_photo_place"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/button_add"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCancelAddPlace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPlaceWeb" />
+
+        <Button
+            android:id="@+id/buttonCancelAddPlace"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/button_cancel_addcity"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

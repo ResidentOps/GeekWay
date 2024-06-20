@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    //Google Services
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "32.0.0"
+//    compileSdkVersion 33
+//    buildToolsVersion "33.0.0"
+
+    defaultConfig {
+        applicationId "com.university.geekway"
+        multiDexEnabled true
+        //minSdkVersion 19
+        minSdkVersion 23
+        targetSdkVersion 32
+        //targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.permissionsdispatcher:permissionsdispatcher:4.5.0'
+
+    //Google Maps
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+    //Firebase Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    //Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    //Firebase FireStore
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    //Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-database-ktx:19.3.1'
+    //Firebase Cloud Storage
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
+    //Firebase Lib Version
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    // Firebase ML
+    implementation("com.google.firebase:firebase-ml-modeldownloader:24.1.2")
+    //TensorFlow
+    implementation("org.tensorflow:tensorflow-lite-task-text:0.3.0")
+
+    //Photos
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'androidx.test:core:1.4.0'
+
+    //Bottom Menu Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    //Translate
+    implementation 'com.google.mlkit:translate:17.0.0'
+    implementation 'com.google.mlkit:language-id:17.0.0'
+    implementation 'com.google.android.gms:play-services-mlkit-language-id:17.0.0'
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+
+    //Unit tests
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation "com.google.truth:truth:1.0.1"
+    androidTestImplementation "com.google.truth:truth:1.0.1"
+}

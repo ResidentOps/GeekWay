@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.PlaceDetailsActivity">
+
+    <FrameLayout
+        android:id="@+id/frameNameLogo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageWhiteScreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contentDescription="image"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/geekway_whitescreen" />
+
+        <ImageView
+            android:id="@+id/imageNameLogo"
+            android:layout_width="65sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="image"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555"
+            app:srcCompat="@drawable/geekway" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameNameLogo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView"
+            app:layout_constraintStart_toStartOf="@+id/scrollView"
+            app:layout_constraintTop_toTopOf="@+id/scrollView">
+
+            <ImageView
+                android:id="@+id/image_viewPlacePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraint"
+                app:srcCompat="@drawable/ic_image" />
+
+            <TextView
+                android:id="@+id/textPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="Название места"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCancelPlaceDetails" />
+
+            <TextView
+                android:id="@+id/textPlaceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="Описание места"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceName" />
+
+            <TextView
+                android:id="@+id/textPlaceAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="@string/text_place_age"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceDescription" />
+
+            <TextView
+                android:id="@+id/textPlaceAgeDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald"
+                android:text="0+"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceAge"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceAge"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceAge" />
+
+            <TextView
+                android:id="@+id/textPlaceCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="@string/text_place_category"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceCity" />
+
+            <TextView
+                android:id="@+id/textPlaceCategoryDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald"
+                android:text="категория места"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceCategory"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceCategory"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceCategory" />
+
+            <TextView
+                android:id="@+id/textPlaceCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="@string/text_place_city"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceAge" />
+
+            <TextView
+                android:id="@+id/textPlaceCityDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald"
+                android:text="город места"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceCity"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceCity"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceCity" />
+
+            <TextView
+                android:id="@+id/textPlaceRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="@string/text_place_rating"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceCategory" />
+
+            <TextView
+                android:id="@+id/textPlaceTotalRatingDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald"
+                android:text="0.0"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceRating"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceRating"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceRating" />
+
+            <TextView
+                android:id="@+id/textPlaceTA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/text_place_TA"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceRating" />
+
+            <TextView
+                android:id="@+id/textPlaceAddress"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_location_focused"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceTA" />
+
+            <TextView
+                android:id="@+id/textPlaceAddressBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald"
+                android:text="не указано"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textPlaceTimeBD"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceAddress"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceTA" />
+
+            <TextView
+                android:id="@+id/textPlaceTime"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_time_focused"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceAddress" />
+
+            <TextView
+                android:id="@+id/textPlaceTimeBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/oswald"
+                android:text="не указано"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceTime"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceAddress" />
+
+            <TextView
+                android:id="@+id/textPlaceContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/text_place_contacts"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceTime" />
+
+            <TextView
+                android:id="@+id/textPlaceWeb"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_web_focused"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceContacts" />
+
+            <TextView
+                android:id="@+id/textPlaceWebBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/oswald"
+                android:autoLink="web"
+                android:text="не указано"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceWeb"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceWeb"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceWeb"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textPlaceTelephone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_phone_focused"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceWeb" />
+
+            <TextView
+                android:id="@+id/textPlaceTelephoneBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:autoLink="phone"
+                android:fontFamily="@font/oswald"
+                android:text="не указано"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPlaceTelephone"
+                app:layout_constraintStart_toEndOf="@+id/textPlaceTelephone"
+                app:layout_constraintTop_toTopOf="@+id/textPlaceTelephone"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textPlaceComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/text_place_comments"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceTelephone" />
+
+            <ImageButton
+                android:id="@+id/btnAddComment"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/commentsRv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceTelephoneBD"
+                app:srcCompat="@drawable/ic_add_comment" />
+
+            <ImageButton
+                android:id="@+id/btnTranslate"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_viewPlacePhoto"
+                app:srcCompat="@drawable/ic_translate" />
+
+            <ImageButton
+                android:id="@+id/butnFavorite"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/btnTranslate"
+                app:layout_constraintTop_toBottomOf="@+id/image_viewPlacePhoto"
+                app:srcCompat="@drawable/ic_favorite_white_bl" />
+
+            <ImageButton
+                android:id="@+id/btnCancelPlaceDetails"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_viewPlacePhoto"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@+id/constraint"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/constraint"
+                app:layout_constraintTop_toBottomOf="@+id/textPlaceComments"
+                tools:listitem="@layout/row_comments" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

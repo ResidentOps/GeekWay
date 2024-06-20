@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "129399359894",
+    "project_id": "geekway-ad68e",
+    "storage_bucket": "geekway-ad68e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129399359894:android:1b2af4c98ca74f9979b5b7",
+        "android_client_info": {
+          "package_name": "com.university.geekway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129399359894-c2olegemnr40qutfjaabon8f3kfoig7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.university.geekway",
+            "certificate_hash": "66510292d358824b9daee264aa2a2b4013cb1b86"
+          }
+        },
+        {
+          "client_id": "129399359894-rg75l1i1b6eati89t7g0hanquc6ef7ah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_-LoHdPljs7Y0fuEOBDDS_hylNxt6RgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129399359894-rg75l1i1b6eati89t7g0hanquc6ef7ah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

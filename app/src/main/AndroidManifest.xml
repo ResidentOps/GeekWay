@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.university.geekway">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" /> <!-- Permissions for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.university.geekway.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.university.geekway.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GeekWay">
+        <activity android:name=".UserActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".user.GuideActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".user.MapActivity"/>
+        <activity android:name=".admin.EditCategoryActivity"/>
+        <activity android:name=".user.PlacesUserActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".user.CategoriesUserActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".admin.EditCityActivity" />
+        <activity android:name=".user.CityDetailsActivity" />
+        <activity android:name=".user.PlaceDetailsActivity" />
+        <activity
+            android:name=".user.AddCommentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.SelectionActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.FavoritesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".user.PreferencesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".admin.EditPlaceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".admin.PlacesActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".admin.AddPlaceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".admin.AddCategoryActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".admin.CategoriesActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".admin.AddCityActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".admin.DataBaseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ReadmeActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".EnterActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".RegistrationActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDUWXVPQ6zlgyrUF6AKl2rUYiE4RZFZhM8" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="langid" />
+    </application>
+
+</manifest>

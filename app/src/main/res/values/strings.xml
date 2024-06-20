@@ -1,0 +1,394 @@
+<resources>
+
+    //Progress Dialog
+    <string name="text_progress">Загрузка…</string>
+
+    //Disconnect Dialog
+    <string name="text_disconnection">Нет подключения к Интернету!</string>
+    <string name="text_check_internet">Проверьте подключение вашего устройства к Wi-Fi или мобильной сети.</string>
+
+    //Readme
+    <string name="text_about">Информация о приложении</string>
+    <string name="text_version">Версия: 2.0</string>
+    <string name="text_aboutApp1">Откройте для себя город с необычной стороны!</string>
+    <string name="text_aboutApp2">Гик (от англ. geek, "чудик") - в современном понимании человек, глубоко увлеченный популярной культурой (комиксы, кинематограф, анимация, видеоигры, фэнтези и т.д.). Термин, объединяющий в себе и геймеров, и отаку, и кидалтов, и косплееров. Данное приложение поможет каждому гику найти места по вкусу!</string>
+    <string name="text_host1">Вы проводите тематические фестивали или являетесь владелецем  необычного магазина, кафе или другого гик-места</string>
+    <string name="text_host2">и хотите чтобы оно появилось здесь?</string>
+    <string name="text_contact_us2">Напишите нам:</string>
+    <string name="text_contact_us3">gd.pestov@yandex.ru</string>
+    <string name="button_ok">Ок</string>
+
+    //Nav_menu
+    <string name="text_main">Города</string>
+    <string name="text_list">Места</string>
+    <string name="text_home">Главная</string>
+    <string name="text_map">Карта</string>
+    <string name="text_profile">Профиль</string>
+
+    //EnterActivity
+    <string name="app_name">GeekWay</string>
+    <string name="app_logo">AppLogo</string>
+    <string name="app_name1">Geek</string>
+    <string name="app_name2">Way</string>
+    <string name="text_enter">Авторизация</string>
+    <string name="editText_email_enter">E-mail</string>
+    <string name="editText_password_enter">Пароль</string>
+    <string name="button_enter">Войти</string>
+    <string name="text_enter_forgotpassword"><u>Забыли пароль?</u></string>
+    <string name="text_havenot_account">У вас еще нет аккаунта? Пройдите регистрацию</string>
+    <string name="button_registration">Регистрация</string>
+    <string name="text_readme"><u>О приложении</u></string>
+    <string name="error_enter_empty_fields">Все поля должны быть заполнены!</string>
+    <string name="error_right_email">Проверьте правильность написания E-mail адреса!</string>
+    <string name="error_right_auth">E-mail или пароль введены не верно!</string>
+    <string name="error_auth">Авторизация не выполнена!</string>
+    <string name="text_wellcome">С возвращением!</string>
+
+    //RegistrationActivity
+    <string name="text_registration">Регистрация</string>
+    <string name="editText_user_name">Ваше имя</string>
+    <string name="editText_email">Ваш E-mail</string>
+    <string name="editText_password">Придумайте пароль</string>
+    <string name="editText_password_confirm">Подтвердите пароль</string>
+    <string name="button_registration_account">Создать профиль</string>
+    <string name="text_activate_account">У вас уже есть аккаунт? Пройдите авторизацию</string>
+    <string name="button_enter_account">Войти</string>
+    <string name="error_reg_empty_fields">Все поля должны быть заполнены!</string>
+    <string name="error_reg_name_long">Имя слишком длинное!</string>
+    <string name="error_reg_name_short">Имя слишком короткое!</string>
+    <string name="error_reg_name_contain">Имя должно содержать только буквы! (пробелы и специальные символы не допускаются)</string>
+    <string name="error_reg_email_right">Проверьте правильность написания E-mail адреса!</string>
+    <string name="error_reg_pass_8">Пароль должен содержать минимум 8 символов!</string>
+    <string name="error_reg_pass_1A">Пароль должен содержать минимум 1 заглавный символ!</string>
+    <string name="error_reg_pass_1a">Пароль должен содержать минимум 1 строчный символ!</string>
+    <string name="error_reg_pass_1n">Пароль должен содержать минимум 1 цифру!</string>
+    <string name="error_reg_pass_1spec">Пароль должен содержать минимум 1 специальный символ! (!@#\$%^_+=)</string>
+    <string name="error_reg_pass_compare">Пароли не совпадают!</string>
+    <string name="text_reg_complite">Регистрация успешно завершена.</string>
+    <string name="text_reg_not_complite">Регистрация не завершена!</string>
+    <string name="text_reg_wellcome">Добро пожаловать!</string>
+    <string name="error_email_exist">Введенный E-mail уже зарегестрирован!</string>
+
+    //ForgotPassword
+    <string name="text_forgot_password">Восстановление пароля</string>
+    <string name="text_enter_email_forgot_password1">Введите адресс электронной почты вашего профиля.</string>
+    <string name="text_enter_email_forgot_password2">На него будет отправлена ссылка для восстановления пароля.</string>
+    <string name="editText_email_forgot_password">E-mail</string>
+    <string name="button_forgot_password_submit">Отправить</string>
+    <string name="button_forgot_password_cancel">Отмена</string>
+    <string name="error_email_empty">Поле должно быть заполнено!</string>
+    <string name="error_email_right">Проверьте правильность написания E-mail адреса!</string>
+    <string name="text_check_email">Откройте полученное письмо в введеном E-mail.</string>
+    <string name="text_email_not_exist">Введенный E-mail не зарегестрирован или был удален!</string>
+    <string name="error_email_fail">Ошибка отправки ссылки для восстановления пароля!</string>
+    <string name="text_email_complite">Ссылка для восстановления пароля успешно отправлена.</string>
+
+    //Settings
+    <string name="text_settings">Настройки</string>
+    <string name="editText_name_settings">Имя пользователя</string>
+    <string name="editText_email_settings">E-mail пользователя</string>
+    <string name="editText_passconf_settings">Пароль для подтверждения</string>
+    <string name="text_reset_password_settings"><u>Изменить пароль</u></string>
+    <string name="button_save_settings">Сохранить</string>
+    <string name="button_cancel_settings">Назад</string>
+    <string name="error_set_name_long">Имя слишком длинное!</string>
+    <string name="error_set_name_short">Имя слишком короткое!</string>
+    <string name="error_set_name_contain">Имя должно содержать только буквы! (пробелы и специальные символы не допускаются)</string>
+    <string name="error_set_email_right">Проверьте правильность написания E-mail адреса!</string>
+    <string name="error_set_pass_empty">Введите ваш пароль для сохранения!</string>
+    <string name="text_set_save">Настройки успешно сохранены.</string>
+    <string name="error_set_pass_not_right">Введен неверный пароль!</string>
+
+    //ResetPassword
+    <string name="text_reset_password">Изменить пароль</string>
+    <string name="editText_resetpass_oldpass">Старый пароль</string>
+    <string name="editText_resetpass_newpass">Новый пароль</string>
+    <string name="editText_resetpass_confnewpass">Подтвердите пароль</string>
+    <string name="button_save_resetpassword">Сохранить</string>
+    <string name="button_cancel_resetpassword">Отмена</string>
+    <string name="error_respass_empty_fields">Все поля должны быть заполнены!</string>
+    <string name="error_respass_pass_8">Пароль должен содержать минимум 8 символов!</string>
+    <string name="error_respass_pass_1A">Пароль должен содержать минимум 1 заглавный символ!</string>
+    <string name="error_respass_pass_1a">Пароль должен содержать минимум 1 строчный символ!</string>
+    <string name="error_respass_pass_1n">Пароль должен содержать минимум 1 цифру!</string>
+    <string name="error_respass_pass_1spec">Пароль должен содержать минимум 1 специальный символ! (!@#\$%^_+=)</string>
+    <string name="error_respass_pass_compare">Пароли не совпадают!</string>
+    <string name="text_respass_pass_save">Пароль успешно изменен.</string>
+    <string name="error_respass_pass_not_right">Введен неверный пароль!</string>
+
+    //AdminActivity
+    <string name="text_admin">Администратор</string>
+    <string name="text_admin_name">Имя:</string>
+    <string name="text_admin_email">E-mail:</string>
+    <string name="button_admin_database">Список городов</string>
+    <string name="button_admin_bdplaces">Список мест</string>
+    <string name="button_admin_settings">Настройки</string>
+    <string name="button_admin_exit">Выйти</string>
+    <string name="text_admin_readme"><u>О приложении</u></string>
+    <string name="button_admin_db">База данных</string>
+
+    //DataBaseActivity
+    <string name="text_database">Города</string>
+    <string name="editText_city_search">Поиск города…</string>
+    <string name="button_add_city">Добавить город</string>
+    <string name="button_cancel_database">Назад</string>
+
+    //AdapterCity
+    <string name="text_delite_city">Удалить</string>
+    <string name="text_shure_delite_city">Вы уверены что хотите удалить данную запись?</string>
+    <string name="text_yes">Да</string>
+    <string name="text_deliting">Удаление...</string>
+    <string name="text_cancel_delite_city">Отмена</string>
+    <string name="text_deliting_complite">Запись удалена.</string>
+    <string name="text_deliting_error">Ошибка удаления!</string>
+    <string name="text_deliting_citysCategories_complite">Дочерние категории удалены.</string>
+    <string name="text_deliting_citysPlaces_complite">Дочерние места и мероприятия удалены.</string>
+
+    //CategoriesActivity
+    <string name="text_categories">Категории</string>
+    <string name="text_preferences">Предпочтения</string>
+    <string name="editText_category_search">Поиск категории…</string>
+    <string name="button_add_category">Добавить категорию</string>
+    <string name="button_cancel_categories">Назад</string>
+
+    //AdapterCategory
+    <string name="text_delite_category">Удалить</string>
+    <string name="text_shure_delite_category">Вы уверены что хотите удалить данную запись?</string>
+    <string name="text_yes_delite_category">Да</string>
+    <string name="text_deliting_category">Удаление...</string>
+    <string name="text_cancel_delite_category">Отмена</string>
+    <string name="text_deliting_category_complite">Запись удалена.</string>
+    <string name="text_deliting_category_error">Ошибка удаления!</string>
+
+    //AdapterCategoryPref
+    <string name="text_delite_categoryPref">Категория удалена из Предпочтений.</string>
+    <string name="error_delite_categoryPref">Ошибка удаления из Предпочтений!</string>
+
+    //PlacesActivity
+    <string name="text_places">Мероприятия/места</string>
+    <string name="editText_place_search">Поиск места/мероприятия…</string>
+    <string name="button_cancel_places">Назад</string>
+    <string name="button_add_place">Добавить новое</string>
+    <string name="button_add_new_place">Добавить место/мероприятие</string>
+
+    //PlacesUserActivity
+    <string name="text_categoryAdd_preference">Категория добавлена в Предпочтения.</string>
+    <string name="error_categoryAdd_preference">Ошибка добавления в Предпочтения!</string>
+    <string name="text_categoryDel_preference">Категория удалена из Предпочтений.</string>
+    <string name="error_categoryDel_preference">Ошибка удаления из Предпочтений!</string>
+    <string name="button_place_addPref"><u>Добавить в Предпочтения</u></string>
+    <string name="button_place_remPref"><u>Убрать из Предпочтений</u></string>
+
+    //AdapterPlace
+    <string name="text_ratind_0">нет оценок</string>
+    <string name="text_comments_0">0</string>
+    <string name="text_edit_place">Изменить</string>
+    <string name="text_delite_place">Удалить</string>
+    <string name="text_chose_option">Выберите опцию</string>
+    <string name="text_delite_place_opt">Удалить</string>
+    <string name="text_shure_delite_place">Вы уверены что хотите удалить данную запись?</string>
+    <string name="text_yes_delite_place">Да</string>
+    <string name="text_deliting_place">Удаление...</string>
+    <string name="text_cancel_delite_place">Отмена</string>
+    <string name="text_deliting_place_complite">Успешно удалено.</string>
+    <string name="text_deliting_place_error">Ошибка удаления!</string>
+
+    //AdapterPlaceFav
+    <string name="text_delite_placeFav">Удалено из Избранного.</string>
+    <string name="error_delite_placeFav">Ошибка удаления из Избранного!</string>
+
+    //AddCategory
+    <string name="text_chose_city">Выберите город</string>
+    <string name="error_add_category_fields_empty">Все поля должны быть заполнены!</string>
+    <string name="error_add_category_right">Проверьте правильность написания названия категории!</string>
+    <string name="text_add_category_complite">Категория успешно добавлена.</string>
+    <string name="error_add_category_not_complite">Ошибка добавления категории!</string>
+
+    //AddCity
+    <string name="error_gallery_optin">Разрешение отклонено!</string>
+    <string name="text_photo_added">Фото добавлено.</string>
+    <string name="error_add_city_fields_empty">Все поля должны быть заполнены!</string>
+    <string name="error_add_city_photo_empty">Добавьте фотографию города!</string>
+    <string name="error_add_city_name_right">Проверьте правильность написания названия города!</string>
+    <string name="text_add_city_complite">Город успешно добавлен.</string>
+    <string name="error_add_city_not_complite">Ошибка добавления города!</string>
+
+    //EditCity
+    <string name="error_editCity_emptyName">Добавьте название города!</string>
+    <string name="error_editCity_emptyDesc">Добавьте описание города!</string>
+    <string name="text_editCity_complite">Город успешно изменен.</string>
+    <string name="text_editCity_not_complite">Ошибка изменения города!</string>
+
+    //EditCategory
+    <string name="error_editCategory_emptyName">Добавьте название категории!</string>
+    <string name="error_editCategory_emptyCity">Укажите город категории!</string>
+    <string name="text_editCategory_complite">Категория успешно изменена.</string>
+    <string name="text_editCategory_not_complite">Ошибка изменения категории!</string>
+
+    //EditPlace
+    <string name="text_editPlace_complite">Успешно изменено.</string>
+    <string name="text_editPlace_not_complite">Ошибка изменения!</string>
+    <string name="error_editPlace_new_cat">Укажите категорию нового города!</string>
+
+    //AddPlace
+    <string name="text_add_place_chose_city">Выберите город</string>
+    <string name="text_add_place_chose_category">Выберите категорию</string>
+    <string name="error_add_place_gallery_optin">Разрешение отклонено!</string>
+    <string name="text_add_place_photo_added">Фото добавлено.</string>
+    <string name="error_add_place_name_empty">Добавьте название!</string>
+    <string name="error_add_place_discrip_empty">Добавьте описание!</string>
+    <string name="error_add_place_category_empty">Укажите категорию!</string>
+    <string name="error_add_place_city_empty">Укажите город!</string>
+    <string name="error_add_place_age_empty">Укажите возрастное ограничение!</string>
+    <string name="error_add_place_photo_empty">Добавьте фотографию!</string>
+    <string name="error_add_place_complite">Успешно добавлено.</string>
+    <string name="error_add_place_not_complite">Ошибка добавления!</string>
+    <string name="error_add_place_city_not_picked">Сначала укажите город!</string>
+
+    //EditPlaceActivity
+    <string name="text_editplace">Изменить мероприятие/место</string>
+    <string name="text_editphoto_place">Фотография места (нажмите, чтобы добавить новую)</string>
+    <string name="button_save_editplace">Сохранить</string>
+    <string name="button_cancel_editplace">Отмена</string>
+
+    //AddCategoryActivity
+    <string name="text_add_category">Добавить категорию</string>
+    <string name="button_cancel_addcategory">Отмена</string>
+    <string name="editText_category_name">Название категории</string>
+    <string name="editText_editCat_city_name">Город</string>
+
+    //AddPlaceActivity
+    <string name="text_add_place">Добавить мероприятие/место</string>
+    <string name="button_cancel_addplace">Отмена</string>
+    <string name="editText_place_name">Название</string>
+    <string name="editText_place_city">Город</string>
+    <string name="editText_place_category">Категория</string>
+    <string name="editText_place_age">Возрастное ограничение</string>
+    <string name="editText_place_description">Описание</string>
+    <string name="editText_place_address">Адрес (при наличии)</string>
+    <string name="editText_place_web">Сайт (при наличии)</string>
+    <string name="editText_place_public">ВКонтакте (при наличии)</string>
+    <string name="editText_place_time">Расписание (при наличии)</string>
+    <string name="editText_place_telephone">Телефон (при наличии)</string>
+    <string name="editText_place_lat">Lat (при наличии)</string>
+    <string name="editText_place_lng">Lng (при наличии)</string>
+    <string name="text_photo_place">Фотография (нажмите, чтобы добавить)</string>
+
+    //AddCityActivity
+    <string name="text_add_city">Добавить город</string>
+    <string name="button_add">Добавить</string>
+    <string name="button_cancel_addcity">Отмена</string>
+    <string name="editText_city_name">Название города</string>
+    <string name="text_photo_city">Фотография города (нажмите, чтобы добавить)</string>
+    <string name="editText_city_description">Описание города</string>
+
+    <string name="text_selectionUpdate">Адаптивный подбор обновлен.</string>
+
+    //PlaceDetailsActivity
+    <string name="button_cancel_placedetails">Назад к списку</string>
+    <string name="text_place_age">Возрастное ограничение:</string>
+    <string name="text_place_category">Категория:</string>
+    <string name="text_place_city">Город:</string>
+    <string name="text_place_rating">Рейтинг:</string>
+    <string name="text_place_TA">Адрес и расписание:</string>
+    <string name="text_place_address">Адрес:</string>
+    <string name="text_place_time">Расписание:</string>
+    <string name="text_place_contacts">Контакты:</string>
+    <string name="text_place_public">ВКонтакте:</string>
+    <string name="text_place_web">Сайт:</string>
+    <string name="text_place_telephone">Телефон:</string>
+    <string name="text_place_comments">Отзывы:</string>
+    <string name="text_placeDetails_authNot">Вы не авторизированны!</string>
+    <string name="text_place_addFav">Добавлено в Избранное.</string>
+    <string name="error_place_addFav">Ошибка добавления в Избранное!</string>
+    <string name="text_place_remFav">Удалено из Избранного.</string>
+    <string name="error_place_remFav">Ошибка удаления из Избранного!</string>
+    <string name="button_place_addFav">Добавить в Избранное</string>
+    <string name="button_place_remFav">Убрать из Избранного</string>
+    <string name="text_noData">не указано</string>
+    <string name="error_modelInitial">Ошибка инициализации модели классификации!</string>
+    <string name="text_reqWIFI">Пожалуйста, установите соединение с Интернетом через Wi-Fi.</string>
+    <string name="error_modelDownload">Ошибка загрузки модели классификации!</string>
+    <string name="error_translatorInitial">Ошибка инициализации переводчика!</string>
+    <string name="error_translatorDownload">Ошибка загрузки переводчика!</string>
+    <string name="text_commentPositive">Похоже, что ваш отзыв позитивный.</string>
+    <string name="text_commentNegative">Похоже, что ваш отзыв негативный.</string>
+    <string name="text_rightRating">Пожалуйста, поставьте соответствующую оценку или перепишите отзыв.</string>
+    <string name="text_alertCommentDialoge">Отзыв уже оставлен</string>
+    <string name="text_alertCommentDialog_shure">Вы уже поделились своими впечатлениями, хотите добавить новый отзыв? (оставленный вами ранее отзыв будет удален)</string>
+    <string name="text_alertCommentDialog_yes">Да</string>
+    <string name="text_alertCommentDialog_no">Нет</string>
+
+    //Add Comment Dialog
+    <string name="text_add_comment">Добавить отзыв</string>
+    <string name="editText_add_comment">Введите отзыв…</string>
+    <string name="button_add_comment">Добавить</string>
+    <string name="button_predict">Predict</string>
+    <string name="error_addCom_emptyCom">Введите отзыв!</string>
+    <string name="error_addCom_emptyRat">Укажите оценку!</string>
+    <string name="text_addCom_complite">Отзыв добавлен.</string>
+    <string name="text_addCom_notComplite">Ошибка добавления отзыва!</string>
+    <string name="text_CommentDialog_delite">Удалить отзыв</string>
+    <string name="text_CommentDialog_deliteShure">Вы уверены, что хотите удалить ваш отзыв?</string>
+    <string name="text_CommentDialog_deliteYes">Да</string>
+    <string name="text_CommentDialog_deliteComplite">Отзыв успешно удален.</string>
+    <string name="text_oldComment_deliteComplite">Оставленный ранее отзыв успешно удален.</string>
+    <string name="text_CommentDialog_deliteError">Ошибка удаления отзыва!</string>
+    <string name="text_CommentDialog_deliteNo">Нет</string>
+    <string name="text_notUIDComment">Данный отзыв оставлен не вами.</string>
+    <string name="text_waitPlease">Пожалуйста, подождите…</string>
+
+    //Profile
+    <string name="text_user">Профиль</string>
+    <string name="text_user_name">Имя:</string>
+    <string name="text_user_email">E-mail:</string>
+    <string name="button_user_db">Путеводитель</string>
+    <string name="button_user_map">Карта</string>
+    <string name="button_user_selection">Адаптивный подбор</string>
+    <string name="button_user_favorites">Избранное</string>
+    <string name="button_user_preferences">Предпочтения</string>
+    <string name="button_user_settings">Настройки</string>
+    <string name="button_user_exit">Выйти</string>
+    <string name="button_readme">О приложении</string>
+
+    //Selection
+    <string name="user_selection">Адаптивный подбор</string>
+
+    //Favorites
+    <string name="text_favorites">Избранное</string>
+    <string name="button_close_favorites">Назад</string>
+
+    //Main
+    <string name="text_mainpage">Главная</string>
+    <string name="text_recommends">Специально для вас</string>
+    <string name="text_reviews">Отзывы:</string>
+    <string name="text_kolvoplaces">Мест:</string>
+
+    <string name="text_openingMap">Открываем карту…</string>
+
+    <string name="text_openingCommentDialog">Поделитесь впечатлениями…</string>
+
+    //Map
+    <string name="text_search">Поиск адреса…</string>
+    <string name="error_gps_not_allow">Разрешение на определение местоположения отклонено!</string>
+    <string name="text_gps_allowing">Разрешение на местоположение</string>
+    <string name="text_gpsApp_allowing">Приложению требуется разрешение на доступ к вашему местоположению</string>
+    <string name="text_gpsApp_allow_OK">ОК</string>
+
+    //CityDetails
+    <string name="button_cancel_citydetails">Назад к списку</string>
+    <string name="button_citycategories"><u>Категории города</u></string>
+    <string name="button_translate_citydetails">Перевести</string>
+    <string name="button_translate_placedetails">Перевести описание</string>
+
+    //CategoriesUser
+    <string name="button_cancel_categoriesUser">Назад к категориям</string>
+
+    <string name="editcyty_text">Изменить город</string>
+    <string name="editcategory_text">Изменить категорию</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
